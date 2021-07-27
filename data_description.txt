@@ -1,0 +1,25 @@
+The data folder contains the following four files:
+
+1. Area-average pentadal rainfall amounts from 10-2017 to 04-2018 (CSV format)
+Filename: 02-tamsatPentadal.v3.1-1506812400-1525129200_zam.csv
+	- The time column presents the date at the end of each pentad
+	- The variables 'rfe' and 'rfe_filled' are the same, unless there 
+	is a gap in the archive and we have filled the gap. If this is the
+	 case, then 'rfe' will be empty and 'rfe_filled' will have valid data.
+	 
+	 
+2. Area-average pentadal rainfall anomalies from 10-2017 to 04-2018 (CSV format)
+Filename: 02a-tamsatPentadalAnomalies.v3.1-1506812400-1525129200_zam.csv
+	- The time column presents the date at the end of each pentad
+	- The variables 'rfe' and 'rfe_filled' - same as above.
+
+3. Monthly rainfall amount maps from 10-2017 to 04-2018 (netCDF format)
+Filename: 04-tamsatMonthly.v3.1-1506812400-1525129200_21.8_34.0_-18.3_-8.0.nc	
+
+This file contains gridded rainfall estimates for each month of the rainy season 
+over Zambia.
+
+4. Monthly rainfall anomaly maps from 10-2017 to 04-2018 (netCDF format)
+Filename: 04a-tamsatMonthlyAnomalies.v3.1-1506812400-1525129200_21.8_34.0_-18.3_-8.0.nc	
+
+Same as above, but for rainfall anomalies with respect to the 1983-2012 climatology.
