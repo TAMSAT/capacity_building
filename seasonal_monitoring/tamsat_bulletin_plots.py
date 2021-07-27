@@ -40,8 +40,6 @@ from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 #------------------------------------------------------------------------#
 # Task 1. Create rainfall time-series
 #------------------------------------------------------------------------#
-# Warning! Make sure you are in the same directory as the files.
-#------------------------------------------------------------------------#
 # Read in rainfall amount and rainfall anomaly CSV files
 rain = pd.read_csv('data/02-tamsatPentadal.v3.1-1506812400-1525129200_zam.csv', index_col=0, parse_dates=True)
 rainanom = pd.read_csv('data/02a-tamsatPentadalAnomalies.v3.1-1506812400-1525129200_zam.csv', index_col=0, parse_dates=True)
