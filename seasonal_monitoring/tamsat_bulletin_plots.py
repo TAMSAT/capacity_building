@@ -43,7 +43,7 @@ from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 # Warning! Make sure you are in the same directory as the files.
 #------------------------------------------------------------------------#
 # Read in rainfall amount and rainfall anomaly CSV files
-rain     = pd.read_csv('data/02-tamsatPentadal.v3.1-1506812400-1525129200_zam.csv', index_col=0, parse_dates=True)
+rain = pd.read_csv('data/02-tamsatPentadal.v3.1-1506812400-1525129200_zam.csv', index_col=0, parse_dates=True)
 rainanom = pd.read_csv('data/02a-tamsatPentadalAnomalies.v3.1-1506812400-1525129200_zam.csv', index_col=0, parse_dates=True)
 
 # Plot rainfall amount time-series
@@ -69,11 +69,11 @@ plt.close()
 # but this will only give you estimates within the Zambia border.
 #------------------------------------------------------------------------#
 # Read in netCDF file for rainfall amount and rainfall anomaly
-rain_nc     = xr.open_dataset('data/04-tamsatMonthly.v3.1-1506812400-1525129200_21.8_34.0_-18.3_-8.0.nc')
+rain_nc = xr.open_dataset('data/04-tamsatMonthly.v3.1-1506812400-1525129200_21.8_34.0_-18.3_-8.0.nc')
 rainanom_nc = xr.open_dataset('data/04a-tamsatMonthlyAnomalies.v3.1-1506812400-1525129200_21.8_34.0_-18.3_-8.0.nc')
 
 # Sum each month in file to get season total
-rain_sum_nc     = rain_nc.sum(dim='time')
+rain_sum_nc = rain_nc.sum(dim='time')
 rainanom_sum_nc = rainanom_nc.sum(dim='time')
 
 # Plot map of rainfall amount
@@ -117,7 +117,7 @@ plt.close()
 # For this, you can use the rain and rainanom variables from Task 1 above
 #------------------------------------------------------------------------#
 # Compute cumulative sum throughout rainy season
-rain_cumsum     = rain.cumsum()
+rain_cumsum = rain.cumsum()
 rainanom_cumsum = rainanom.cumsum()
 
 # Plot rainfall amount time-series
