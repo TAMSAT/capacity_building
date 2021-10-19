@@ -1,0 +1,16 @@
+The data folder contains the following two files:
+
+1. Area-average monthly climatological (1983-2016) rainfall values from TAMSAT and GPCC 
+from northern Ghana/southern Burkina Faso [N: 11.0, S: 10.0, W: -2.0, E: -1.0] (CSV format)
+Filename: monthly_climatology_tamsat-gpcc.csv
+	- The month column is the month (1-12)
+	- The TAMSAT and GPCC columns represent the monthly climatological rainfall 
+	  for each dataset respectively.
+	 
+2. Area-average July total rainfall from 1983-2016 from TAMSAT and GPCC from northern 
+Ghana/southern Burkina Faso [N: 11.0, S: 10.0, W: -2.0, E: -1.0] (CSV format)
+Filename: july_rainfall_tamsat-gpcc.csv
+	- The date column is the year and month [yyyy-mm]
+	- The TAMSAT and GPCC columns represent the monthly July rainfall for each 
+	  dataset respectively.
+	 
